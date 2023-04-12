@@ -1,0 +1,26 @@
+.promo {
+  padding: 27px 35px 10px;
+  background-color: var(--c-pressed-green);
+  background-image: url("../img/promo-cat.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.promo__title {
+  margin: 0;
+  color: var(--c-white-default);
+}
+
+.promo__slogan {
+  font-family: var(--accent-font);
+  line-height: 14px;
+  color: var(--c-white-default);
+  text-transform: uppercase;
+}
+
+.promo__button {
+  padding: 7px 44px;
+
+  font-size: 14px;
+  line-height: 18px;
+}
