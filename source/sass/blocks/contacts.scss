@@ -1,5 +1,9 @@
 .contacts {
   background-color: var(--c-white-default);
+
+  &--.contacts--inner {
+    background-color: var(--c-basic-gray);
+  }
 }
 
 .contacts__wrapper {
@@ -19,8 +23,4 @@
 .contacts__city {
   margin: 0;
   line-height: 20px;
-}
-
-.contacts--inner {
-  background-color: var(--c-basic-gray);
 }
