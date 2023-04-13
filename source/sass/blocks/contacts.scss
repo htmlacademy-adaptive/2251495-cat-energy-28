@@ -1,0 +1,26 @@
+.contacts {
+  background-color: var(--c-white-default);
+
+  &--inner {
+    background-color: var(--c-basic-gray);
+  }
+}
+
+.contacts__wrapper {
+  padding: 26px 20px;
+}
+
+.contacts__lead {
+  margin: 0;
+  font-family: var(--accent-font);
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: var(--c-black);
+}
+
+.contacts__address,
+.contacts__city {
+  margin: 0;
+  line-height: 20px;
+}

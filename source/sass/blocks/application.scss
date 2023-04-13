@@ -1,0 +1,15 @@
+.application {
+  padding: 27px 20px 32px;
+}
+
+.application__title {
+  margin: 0;
+  margin-bottom: 37px;
+}
+
+.application__description {
+  margin-bottom: 39px;
+  font-family: var(--accent-font);
+  text-transform: uppercase;
+  color: var(--c-black);
+}

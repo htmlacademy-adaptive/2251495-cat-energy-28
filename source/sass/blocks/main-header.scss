@@ -1,0 +1,31 @@
+.main-header {
+  padding: 10px 20px;
+  background-color: var(--c-white-default);
+  color: var(--c-black);
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.main-header__nav {
+  @media (min-width: $tablet-width) {
+    flex-shrink: 0;
+  }
+}
+
+.main-header__logo {
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    gap: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 14px;
+  }
+}

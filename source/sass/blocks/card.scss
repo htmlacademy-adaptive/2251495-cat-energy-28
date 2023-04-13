@@ -1,0 +1,26 @@
+.card__title {
+  margin: 0;
+  margin-bottom: 14px;
+  font-family: var(--accent-font);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: var(--c-secondary-black);
+}
+
+.card__description-list {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.card__desc-definition {
+  margin: 0;
+}
+
+.card__order-link {
+  width: 280px;
+  padding: 10px 20px;
+  font-size: 16px;
+  line-height: 20px;
+}

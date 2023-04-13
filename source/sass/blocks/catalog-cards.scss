@@ -1,0 +1,43 @@
+.catalog-cards {
+  padding: 27px 20px 25px;
+  background-color: var(--c-white-default);
+}
+
+.catalog-cards__title {
+  margin: 0;
+  margin-bottom: 41px;
+}
+
+.catalog-cards__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.catalog-cards__heading {
+  margin: 0;
+  margin-top: 78px;
+  margin-bottom: 8px;
+  font-family: var(--accent-font);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.catalog-cards__description {
+  margin: 0;
+  margin-bottom: 21px;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.catalog-cards__link {
+  padding: 10px;
+  width: 280px;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: var(--c-basic-gray);
+  color: var(--c-dark-gray);
+}
