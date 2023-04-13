@@ -1,4 +1,5 @@
-// colors
+// colors & fonts
+
 :root {
   --c-dark-gray: #444444;
   --c-black: #000000;
@@ -13,3 +14,8 @@
   --main-font: "Lato", "Arial", sans-serif;
   --accent-font: "Oswald", "Arial", sans-serif;
 }
+
+// viewports
+
+$tablet-width: 768px;
+$desktop-width: 1440px;

@@ -11,4 +11,15 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.site-list__item:not(:last-child) {
+  @media (min-width: $tablet-width) {
+    margin-right: 34px;
+  }
 }
