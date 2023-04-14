@@ -2,3 +2,13 @@
   padding: 40px 20px;
   background-color: var(--c-basic-gray);
 }
+
+.main-footer__wrapper {
+  margin: 0 auto;
+  max-width: 1220px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}

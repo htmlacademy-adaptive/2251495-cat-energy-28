@@ -1,3 +1,9 @@
+.item-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .item-content__lable {
   font-family: var(--accent-font);
   font-size: 16px;
@@ -7,6 +13,7 @@
 
 .item-content__input {
   padding: 14px 20px 13px;
+  flex-grow: 1;
   font-family: var(--accent-font);
   font-size: 16px;
   line-height: 18px;

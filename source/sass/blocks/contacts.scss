@@ -3,11 +3,26 @@
 
   &--inner {
     background-color: var(--c-basic-gray);
+
+    @media (min-width: $tablet-width) {
+      background-color: var(--c-white-default);
+    }
   }
 }
 
 .contacts__wrapper {
+  margin: 0 auto;
+  max-width: 768px;
+}
+
+.contacts__container {
   padding: 26px 20px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    width: 565px;
+  }
 }
 
 .contacts__lead {

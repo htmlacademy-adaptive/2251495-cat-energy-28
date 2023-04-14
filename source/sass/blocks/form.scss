@@ -1,5 +1,43 @@
 .form__fieldset {
+  margin: 0;
+  padding: 0;
   border: none;
+}
+
+.form__container {
+  margin: 0 auto;
+  padding: 0 20px 32px;
+  max-width: 1220px;
+  display: flex;
+  flex-direction: column;
+  gap: 46px;
+
+  @media (min-width: $tablet-width) {
+    gap: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    gap: 80px;
+  }
+
+  .form__fieldset {
+    width: 50%;
+  }
+
+  .form__item {
+    margin-bottom: 14px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.form__wrapper {
+  margin: 0 auto;
+  padding: 27px 20px 32px;
+  max-width: 1220px;
 }
 
 .form__list {
@@ -19,6 +57,8 @@
 
 .form__textarea {
   padding: 9px 12px 9px 15px;
+  min-height: 24px;
+  height: 151px;
   font-family: var(--accent-font);
   font-size: 16px;
   line-height: 18px;
@@ -26,6 +66,66 @@
   resize: none;
   border: none;
   box-shadow: inset 0 0 0 1px #e7e7e7;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 19px;
+    min-height: 50px;
+    height: 174px;
+  }
+}
+
+.form__comment {
+  .form__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.form__annotation {
+  margin: 0;
+  line-height: 16px;
+  color: var(--c-black);
+}
+
+.form__fieldset--contacts {
+  .form__list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    @media (min-width: $tablet-width) {
+      gap: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      flex-direction: row;
+      gap: 78px;
+    }
+  }
+
+  .form__item {
+    @media (min-width: $desktop-width) {
+      flex-grow: 1;
+    }
+  }
+}
+
+.form__fieldset--addition {
+  .form__list {
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      column-gap: 60px;
+      row-gap: 32px;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 1fr;
+      column-gap: 60px;
+    }
+  }
 }
 
 .form__button {
@@ -34,10 +134,29 @@
   width: 280px;
   font-size: 16px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 13px 45px;
+    width: 282px;
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 568px;
+  }
 }
 
-.form__annotation {
-  margin: 0;
-  line-height: 16px;
-  color: var(--c-black);
+.form__button-wrapper {
+  margin: 0 auto;
+  padding: 0 20px 32px;
+  max-width: 1220px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 84px;
+  }
 }
