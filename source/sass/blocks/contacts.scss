@@ -12,7 +12,7 @@
 
 .contacts__wrapper {
   margin: 0 auto;
-  max-width: 768px;
+  max-width: 1440px;
 }
 
 .contacts__container {
@@ -38,4 +38,12 @@
 .contacts__city {
   margin: 0;
   line-height: 20px;
+}
+
+.contacts__map {
+  img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
 }

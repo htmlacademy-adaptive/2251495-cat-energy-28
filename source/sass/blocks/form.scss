@@ -32,12 +32,10 @@
       margin-bottom: 20px;
     }
   }
-}
 
-.form__wrapper {
-  margin: 0 auto;
-  padding: 27px 20px 32px;
-  max-width: 1220px;
+  .form__fieldset--data {
+    width: 100%;
+  }
 }
 
 .form__list {
