@@ -3,11 +3,11 @@
   background-color: var(--c-white-default);
 
   @media (min-width: $tablet-width) {
-    padding: 0 31px 109px 104px;
+    padding: 0 109px 47px 31px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 110px 106px 70px;
+    padding: 0 110px 36px 70px;
   }
 }
 
@@ -22,17 +22,16 @@
   line-height: 40px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 72px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 72px;
+    margin-bottom: 32px;
+    font-size: 60px;
+    line-height: 60px;
   }
 }
 
 .guidance__list {
   margin: 0;
   padding: 0;
+  padding-left: 80px;
   list-style-type: none;
   display: grid;
   grid-template-columns: 1;
@@ -40,6 +39,7 @@
   gap: 20px;
 
   @media (min-width: $tablet-width) {
+    padding-left: 0;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     column-gap: 153px;
@@ -48,13 +48,62 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1;
+    grid-template-rows: 1fr;
     row-gap: 94px;
   }
 }
 
 .guidance__item {
+  position: relative;
   @media (min-width: $tablet-width) {
     width: 204px;
+    padding: 151px 26px 57px 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &::before {
+    position: absolute;
+    top: -3px;
+    left: -80px;
+    height: 60px;
+    width: 60px;
+    background-color: var(--c-basic-green);
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+
+    @media (min-width: $tablet-width) {
+      top: 31px;
+      left: 0;
+      height: 80px;
+      width: 80px;
+    }
+  }
+}
+
+.guidance__item--healthy {
+  &::before {
+    background-image: url("../img/leaf.svg");
+
+  }
+}
+
+.guidance__item--making {
+  &::before {
+    background-image: url("../img/water.svg");
+  }
+}
+
+.guidance__item--feeding {
+  &::before {
+    background-image: url("../img/icon_eat.svg");
+  }
+}
+
+.guidance__item--effect {
+  &::before {
+    background-image: url("../img/time.svg");
   }
 }

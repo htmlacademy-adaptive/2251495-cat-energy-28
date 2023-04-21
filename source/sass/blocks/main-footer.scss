@@ -6,9 +6,47 @@
 .main-footer__wrapper {
   margin: 0 auto;
   max-width: 1220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 29px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+  }
+
+  &::before {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 44px;
+    width: 281px;
+    height: 1px;
+    background-color: #d9d9d9;
+    content: "";
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 106px;
+    width: 281px;
+    height: 1px;
+    background-color: #d9d9d9;
+    content: "";
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
