@@ -3,11 +3,25 @@
 
   &--inner {
     background-color: var(--c-basic-gray);
+
+    @media (min-width: $tablet-width) {
+      background-color: var(--c-white-default);
+    }
   }
 }
 
 .contacts__wrapper {
+  margin: 0 auto;
+}
+
+.contacts__container {
   padding: 26px 20px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    width: 565px;
+  }
 }
 
 .contacts__lead {
@@ -23,4 +37,12 @@
 .contacts__city {
   margin: 0;
   line-height: 20px;
+}
+
+.contacts__map {
+  img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
 }

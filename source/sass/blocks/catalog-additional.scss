@@ -1,25 +1,74 @@
 .catalog-additional {
-  padding: 25px 20px 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  padding: 25px 0 35px;
+  margin: 0 auto;
+  width: 320px;
+  background-color: var(--c-white-default);
+
+  @media (min-width: $tablet-width) {
+    padding: 65px 30px 68px;
+    width: 768px;
+    gap: 69px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 78px 110px 75px;
+    width: 1440px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 80px;
+  }
 }
 
 .catalog-additional__title {
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 1px;
   font-family: var(--accent-font);
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
   color: var(--c-black);
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 1px;
+    width: 100%;
+  }
 }
 
 .catalog-additional__list {
-  margin: 0;
   padding: 0;
+  margin: 0 auto;
+  width: 280px;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    width: 895px;
+  }
 }
 
 .catalog-additional__item {
   padding: 13px 0 19px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    gap: 40px;
+  }
 }
 
 .catalog-additional__heading {
@@ -31,6 +80,10 @@
   font-weight: 400;
   text-transform: uppercase;
   color: var(--c-secondary-black);
+
+  @media (min-width: $tablet-width) {
+    margin-right: auto;
+  }
 }
 
 .catalog-additional__description-list {
@@ -45,9 +98,13 @@
 
 .catalog-additional__order-link {
   padding: 10px 20px;
-  width: 280px;
+  width: 100%;
   font-size: 16px;
   line-height: 20px;
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
+  }
 }
 
 .catalog-additional__bonus {
@@ -59,9 +116,26 @@
   background-repeat: no-repeat;
   background-size: cover;
   color: var(--c-white-default);
+
+  @media (min-width: $tablet-width) {
+    padding: 71px 124px 69px 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 185px 43px 42px 40px;
+  }
 }
 
 .catalog-additional__text {
   margin: 0;
   width: 161px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
 }

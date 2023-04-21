@@ -1,6 +1,18 @@
 .catalog-cards {
+  margin: 0 auto;
   padding: 27px 20px 25px;
+  width: 320px;
   background-color: var(--c-white-default);
+
+  @media (min-width: $tablet-width) {
+    padding: 65px 30px 68px;
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 78px 110px 75px;
+    width: 1440px;
+  }
 }
 
 .catalog-cards__title {
@@ -9,9 +21,28 @@
 }
 
 .catalog-cards__list {
-  margin: 0;
   padding: 0;
+  margin: 0 auto;
+  width: 280px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+    row-gap: 63px;
+  }
 }
 
 .catalog-cards__heading {
@@ -24,6 +55,10 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
+  }
 }
 
 .catalog-cards__description {
@@ -31,6 +66,10 @@
   margin-bottom: 21px;
   font-size: 12px;
   line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 87px;
+  }
 }
 
 .catalog-cards__link {
@@ -40,4 +79,12 @@
   line-height: 20px;
   background-color: var(--c-basic-gray);
   color: var(--c-dark-gray);
+
+  @media (min-width: $tablet-width) {
+    width: 249px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+  }
 }

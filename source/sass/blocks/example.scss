@@ -1,12 +1,81 @@
 .example {
-  padding: 25px 20px 40px;
   background-color: var(--c-light-gray);
+
+  @media (min-width: $tablet-width) {
+    padding: 43px 30px 0;
+    background: linear-gradient(var(--c-white-default) 68%, var(--c-light-gray) 68% 32%);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 43px 30px 0;
+    background: linear-gradient(var(--c-white-default) 23%, var(--c-light-gray) 23% 77%);
+  }
+}
+
+.example__wrapper {
+  margin: 0 auto;
+  padding: 25px 20px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1220px;
+  }
+}
+
+.example__container {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 91px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 91px;
+    flex-direction: column;
+  }
 }
 
 .example__title {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 63px;
+    flex-grow: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 146px;
+  }
+}
+
+.example__text {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 63px;
+    flex-grow: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 436px;
+  }
+}
+
+.example__list {
+  margin: 0;
+  padding: 0;
 }
 
 .example__number {
@@ -23,6 +92,7 @@
 }
 
 .example__price {
+  margin: 0;
   font-family: var(--accent-font);
   line-height: 20px;
   text-transform: uppercase;

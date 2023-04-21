@@ -1,12 +1,33 @@
 .guidance {
   padding: 10px 20px 49px;
   background-color: var(--c-white-default);
+
+  @media (min-width: $tablet-width) {
+    padding: 0 31px 109px 104px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px 106px 70px;
+  }
+}
+
+.guidance__wrapper {
+  margin: 0 auto;
+  max-width: 1220px;
 }
 
 .guidance__title {
   margin: 0;
   margin-bottom: 40px;
   line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 72px;
+  }
 }
 
 .guidance__list {
