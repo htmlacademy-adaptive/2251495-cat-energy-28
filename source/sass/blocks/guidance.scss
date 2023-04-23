@@ -57,7 +57,6 @@
 .guidance__item {
   position: relative;
 
-
   @media (min-width: $tablet-width) {
     width: 204px;
     padding: 151px 26px 57px 0;
@@ -69,7 +68,7 @@
       content: counter(new);
       display: block;
       position: absolute;
-      top: 0px;
+      top: 0;
       left: -26px;
       width: 20px;
       color: var(--c-basic-gray);
@@ -108,7 +107,6 @@
 .guidance__item--healthy {
   &::before {
     background-image: url("../img/leaf.svg");
-
   }
 }
 

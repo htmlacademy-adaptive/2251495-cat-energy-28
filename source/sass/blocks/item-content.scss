@@ -39,23 +39,21 @@
 }
 
 .item-content__input--email {
-  background-image: url(../img/email.svg);
+  background-image: url("../img/email.svg");
   background-repeat: no-repeat;
-  background-position:  right 17px top 16px;
+  background-position: right 17px top 16px;
 
   @media (min-width: $tablet-width) {
-    background-position:  right 20px top 20px;
+    background-position: right 20px top 20px;
   }
 }
 
 .item-content__input--phone {
-  background-image: url(../img/phone.svg);
+  background-image: url("../img/phone.svg");
   background-repeat: no-repeat;
-  background-position:  right 15px top 15px;
+  background-position: right 15px top 15px;
 
   @media (min-width: $tablet-width) {
-    background-position:  right 20px top 19px;
+    background-position: right 20px top 19px;
   }
 }
-
-
