@@ -7,7 +7,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 110px 36px 70px;
+    padding: 0 110px 36px;
   }
 }
 
@@ -35,8 +35,8 @@
   list-style-type: none;
   display: grid;
   grid-template-columns: 1;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  gap: 20px;
+  grid-template-rows: repeat(4, 54px);
+  gap: 26px;
 
   @media (min-width: $tablet-width) {
     padding-left: 0;
@@ -44,22 +44,44 @@
     grid-template-rows: 1fr 1fr;
     column-gap: 153px;
     row-gap: 37px;
+    counter-reset: new;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, max-content);
     grid-template-rows: 1fr;
-    row-gap: 94px;
+    column-gap: 78px;
   }
 }
 
 .guidance__item {
   position: relative;
+
+
   @media (min-width: $tablet-width) {
     width: 204px;
     padding: 151px 26px 57px 0;
     font-size: 16px;
     line-height: 24px;
+    counter-increment: new 1;
+
+    &::marker {
+      content: counter(new);
+      display: block;
+      position: absolute;
+      top: 0px;
+      left: -26px;
+      width: 20px;
+      color: var(--c-basic-gray);
+      text-align: left;
+      font-size: 280px;
+      line-height: 280px;
+      font-family: var(--accent-font);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
   }
 
   &::before {

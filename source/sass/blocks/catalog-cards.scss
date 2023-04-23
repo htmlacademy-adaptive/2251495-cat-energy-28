@@ -30,7 +30,7 @@
     top: -27px;
     left: -20px;
     right: 0;
-    width: 320px;
+    width: 100vw;
     height: 1px;
     background-color: #ebebeb;
     content: "";
@@ -69,14 +69,13 @@
 
 .catalog-cards__item {
   position: relative;
-  text-align: center;
+
   &::before {
     position: absolute;
-    margin: 0 auto;
     top: 0;
     left: -20px;
     right: 0;
-    width: 320px;
+    width: 100vw;
     height: 1px;
     background-color: #ebebeb;
     content: "";
@@ -89,6 +88,9 @@
 
 .catalog-cards__show-all {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 .catalog-cards__heading {
@@ -152,10 +154,10 @@
   margin-bottom: 21px;
   font-size: 12px;
   line-height: 16px;
+  flex-grow: 1;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
-    margin-bottom: 87px;
     font-size: 16px;
     line-height: 18px;
     width: 165px;
