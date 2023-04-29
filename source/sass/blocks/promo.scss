@@ -35,7 +35,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 141px;
+    padding-top: 109px;
     background-image: url("../img/background-cat-desktop.jpg");
     background-position: right;
     background-size: 50%;
@@ -51,7 +51,7 @@
 .promo__container {
   position: relative;
   margin-bottom: auto;
-  padding: 27px 35px 164px;
+  padding: 32px 35px 164px;
   background-color: rgba(104, 183, 56, 0.85);
   z-index: 1;
 
@@ -63,7 +63,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 110px 80px 52px;
+    padding: 84px 80px 52px;
     z-index: -2;
   }
 }
@@ -113,7 +113,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 27px 35px 164px;
+    padding: 27px 0 164px;
     width: 1220px;
     min-height: 585px;
   }
@@ -133,7 +133,7 @@
     width: 244px;
     font-size: 20px;
     line-height: 20px;
-    margin-left: 80px;
+    margin-left: 88px;
   }
 }
 
@@ -145,11 +145,16 @@
   z-index: 2;
 
   @media (min-width: $tablet-width) {
-    top: 263px;
+    top: 257px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 1;
   }
 
   @media (min-width: $desktop-width) {
     top: 32px;
-    right: 330px;
+    left: 450px;
+    margin: 0;
   }
 }
