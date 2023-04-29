@@ -40,29 +40,26 @@
 }
 
 .control__input[type="radio"] {
-  &:checked {
-    + .control__mark {
-      background-image: url("../img/radiobutton_active.svg");
-      background-repeat: no-repeat;
-      background-position: center;
+  &:checked + .control__mark {
+    background-image: url("../img/radiobutton-active.svg");
+    background-repeat: no-repeat;
+    background-position: center;
 
-      @media (min-width: $tablet-width) {
-        background-image: url("../img/radiobutton_active_big.svg");
-      }
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/radiobutton-active-big.svg");
     }
   }
 }
 
-.control__input[type="checkbox"] {
-  &:checked {
-    + .control__mark {
-      background-image: url("../img/check_mark.svg");
-      background-repeat: no-repeat;
-      background-position: center;
 
-      @media (min-width: $tablet-width) {
-        background-image: url("../img/check_mark_big.svg");
-      }
+.control__input[type="checkbox"] {
+  &:checked + .control__mark {
+    background-image: url("../img/check-mark.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/check-mark-big.svg");
     }
   }
 }

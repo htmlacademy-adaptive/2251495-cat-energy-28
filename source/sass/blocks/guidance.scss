@@ -22,7 +22,7 @@
   line-height: 40px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 32px;
+    margin-bottom: 72px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -43,7 +43,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     column-gap: 153px;
-    row-gap: 37px;
+    row-gap: 77px;
     counter-reset: new;
   }
 
@@ -58,29 +58,32 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    width: 204px;
-    padding: 151px 26px 57px 0;
+    min-width: 204px;
+    padding: 111px 26px 57px 0;
     font-size: 16px;
     line-height: 24px;
     counter-increment: new 1;
+    z-index: 1;
 
-    &::marker {
+    &::after {
       content: counter(new);
       display: block;
       position: absolute;
-      top: 0;
-      left: -26px;
+      top: -40px;
+      left: 118px;
       width: 20px;
       color: var(--c-basic-gray);
       text-align: left;
       font-size: 280px;
       line-height: 280px;
       font-family: var(--accent-font);
+      z-index: -1;
     }
   }
 
   @media (min-width: $desktop-width) {
     padding-right: 0;
+    max-width: 245px;
   }
 
   &::before {
@@ -96,7 +99,7 @@
     background-size: auto;
 
     @media (min-width: $tablet-width) {
-      top: 31px;
+      top: 0;
       left: 0;
       height: 80px;
       width: 80px;
@@ -118,7 +121,7 @@
 
 .guidance__item--feeding {
   &::before {
-    background-image: url("../img/icon_eat.svg");
+    background-image: url("../img/icon-eat.svg");
   }
 }
 

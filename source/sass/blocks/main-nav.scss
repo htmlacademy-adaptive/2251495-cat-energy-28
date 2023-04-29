@@ -67,15 +67,21 @@
 }
 
 @media (max-width: $mobile-width-only) {
-  .main-nav--closed .site-list__item {
-    display: none;
-  }
-
-  .main-nav--closed .user-list__item {
+  .main-nav--closed li {
     display: none;
   }
 
   .main-nav--nojs .main-nav__toggle {
     display: none;
+  }
+}
+
+.main-nav__list {
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
   }
 }
