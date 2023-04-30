@@ -1,11 +1,14 @@
 .card {
-  padding-top: 19px;
-  width: 280px;
+  padding: 19px 20px 0;
+  width: 100vw;
 
   @media (min-width: $tablet-width) {
     padding: 161px 37px 39px;
     width: 324px;
     background-color: var(--c-basic-gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -15,8 +18,15 @@
 
   &--more {
     background-color: var(--c-white-default);
-    box-shadow: inset 0 0 0 2px var(--c-basic-gray);
+
+    @media (min-width: $tablet-width) {
+      box-shadow: inset 0 0 0 2px var(--c-basic-gray);
+    }
   }
+}
+
+.card__link .card__title {
+  display: inline-block;
 }
 
 .card__title {
@@ -28,33 +38,83 @@
   line-height: 20px;
   text-transform: uppercase;
   color: var(--c-secondary-black);
+  width: 76px;
+  text-align: start;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 21px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    width: 154px;
+  }
 }
 
 .card__image {
   float: left;
+  margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
     float: none;
+    position: absolute;
+    top: -45px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+    &:nth-child(3n) {
+      top: -73px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -52px;
+
+    &:nth-child(3n) {
+      top: -80px;
+    }
   }
 }
 
 .card__description-list {
-  font-size: 12px;
-  line-height: 16px;
   width: 50%;
+  margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin-bottom: 33px;
+  }
 }
 
 .card__desc-row {
   display: flex;
   justify-content: space-between;
+  font-size: 12px;
+  line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 9px;
+    border-bottom: 1px solid var(--c-special-gray);
+
+    &:not(:last-child) {
+      margin-bottom: 7px;
+    }
+
+    td {
+      font-size: 16px;
+      line-height: 16px;
+    }
+  }
 }
 
 .card__desc-definition {
   margin: 0;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .card__order-link {
-  width: 280px;
+  width: 100%;
   padding: 10px 20px;
   font-size: 16px;
   line-height: 20px;

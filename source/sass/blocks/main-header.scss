@@ -1,17 +1,26 @@
 .main-header {
-  margin: 0 auto;
-  padding: 10px 20px;
+  width: 100%;
   background-color: var(--c-white-default);
   color: var(--c-black);
 
   @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    padding: 0 30px;
     display: flex;
-    padding: 18px 30px;
-    width: 708px;
+    min-width: 708px;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
+    position: absolute;
+    padding: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 53px;
+    z-index: 2;
     width: 1220px;
+    background-color: transparent;
   }
 }
 
@@ -23,14 +32,40 @@
 
 .main-header__logo {
   margin-right: auto;
-  display: flex;
+  padding: 10px 20px 17px;
+  display: grid;
   align-items: center;
+  grid-template-columns: repeat(3, 1fr);
 
   @media (min-width: $tablet-width) {
-    gap: 12px;
+    display: block;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
     gap: 14px;
+  }
+}
+
+.main-header__logo-text {
+  justify-self: center;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-header__logo-picture {
+  height: 38px;
+  width: 33px;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 52px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 202px;
+    height: 59px;
   }
 }
