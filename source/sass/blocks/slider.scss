@@ -1,1 +1,80 @@
-// здесь будут стили для slider
+.slider__pictures {
+  position: relative;
+  min-height: 256px;
+  min-width: 280px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 512px;
+    min-width: 560px;
+  }
+}
+
+.slider__picture-wrapper {
+  position: absolute;
+}
+
+.slider__picture-wrapper--fat {
+  clip: rect(auto, 140px, auto, auto);
+
+  @media (min-width: $tablet-width) {
+    clip: rect(auto, 280px, auto, auto);
+  }
+}
+
+.slider__picture-wrapper--slim {
+  clip: rect(auto, auto, auto, 140px);
+
+  @media (min-width: $tablet-width) {
+    clip: rect(auto, auto, auto, 280px);
+  }
+}
+
+.slider__controls {
+  position: relative;
+}
+
+.slider__bar {
+  position: absolute;
+  top: -256px;
+  left: 138px;
+  display: block;
+  width: 4px;
+  height: 256px;
+  background-color: #666666;
+
+  @media (min-width: $tablet-width) {
+    height: 512px;
+    top: -512px;
+    left: 278px;
+  }
+}
+
+.slider__button {
+  position: absolute;
+  top: -146px;
+  left: 120px;
+  display: block;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #666666;
+  background-color: var(--c-white-default);
+  background-image: url("../img/slider-button-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    left: 261px;
+    top: -270px;
+  }
+}
+
+.slider__button--prev {
+  clip: rect(auto, 21px, auto, auto);
+}
+
+.slider__button--next {
+  clip: rect(auto, auto, auto, 20px);
+}
