@@ -5,10 +5,6 @@
   list-style-type: none;
 }
 
-.social__item {
-  padding: 13px;
-}
-
 .social__item--telegram {
   display: flex;
   align-items: center;
@@ -17,4 +13,17 @@
 
 .social__link {
   display: flex;
+  padding: 13px;
+}
+
+.social__picture {
+  fill: #666666;
+
+  .social__list a[href]:hover & {
+    fill: var(--c-basic-green);
+  }
+
+  .social__list a[href]:active & {
+    opacity: 0.3;
+  }
 }
