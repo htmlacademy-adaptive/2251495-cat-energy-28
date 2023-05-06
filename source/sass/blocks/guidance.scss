@@ -93,10 +93,10 @@
     height: 60px;
     width: 60px;
     background-color: var(--c-basic-green);
-    content: "";
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto;
+    content: "";
 
     @media (min-width: $tablet-width) {
       top: 0;

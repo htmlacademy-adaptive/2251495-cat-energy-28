@@ -33,6 +33,36 @@
   position: relative;
 }
 
+.slider__controls:hover {
+  .slider__bar {
+    background-color: var(--c-basic-green);
+  }
+
+  .slider__button {
+    border-color: var(--c-basic-green);
+
+    &::before {
+      background-color: var(--c-basic-green);
+    }
+  }
+}
+
+.slider__controls:active {
+  .slider__bar {
+    background-color: var(--c-pressed-green);
+    opacity: 0.6;
+  }
+
+  .slider__button {
+    border-color: var(--c-pressed-green);
+
+    &::before {
+      background-color: var(--c-pressed-green);
+      opacity: 0.6;
+    }
+  }
+}
+
 .slider__bar {
   position: absolute;
   top: -256px;
@@ -41,15 +71,7 @@
   width: 4px;
   height: 256px;
   background-color: #666666;
-
-  &:hover {
-    background-color: var(--c-basic-green);
-  }
-
-  &:active {
-    background-color: var(--c-pressed-green);
-    opacity: 0.6;
-  }
+  border-radius: 2px;
 
   @media (min-width: $tablet-width) {
     height: 512px;
@@ -86,27 +108,4 @@
     left: 261px;
     top: -270px;
   }
-}
-
-.slider__button:hover {
-  border-color: var(--c-basic-green);
-
-  &::before {
-    background-color: var(--c-basic-green);
-  }
-}
-
-.slider__button:active {
-  &::before {
-    background-color: var(--c-pressed-green);
-    opacity: 0.6;
-  }
-}
-
-.slider__button--prev {
-  clip: rect(auto, 21px, auto, auto);
-}
-
-.slider__button--next {
-  clip: rect(auto, auto, auto, 20px);
 }

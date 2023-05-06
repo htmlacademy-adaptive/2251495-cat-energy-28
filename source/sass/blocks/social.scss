@@ -19,11 +19,11 @@
 .social__picture {
   fill: #666666;
 
-  .social__list a[href]:hover & {
+  .social__link:hover & {
     fill: var(--c-basic-green);
   }
 
-  .social__list a[href]:active & {
+  .social__link:active & {
     opacity: 0.3;
   }
 }

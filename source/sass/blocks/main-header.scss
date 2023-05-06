@@ -36,6 +36,7 @@
   display: grid;
   align-items: center;
   grid-template-columns: repeat(3, 1fr);
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -44,6 +45,14 @@
 
   @media (min-width: $desktop-width) {
     gap: 14px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
 

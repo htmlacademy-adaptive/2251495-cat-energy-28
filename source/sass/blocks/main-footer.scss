@@ -43,3 +43,11 @@
     }
   }
 }
+
+.main-footer__logo {
+  cursor: pointer;
+
+  &:hover .main-footer__logo-img {
+    fill: #3e3e3e;
+  }
+}

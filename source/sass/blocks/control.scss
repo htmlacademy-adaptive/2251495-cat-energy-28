@@ -1,5 +1,9 @@
 .control {
   position: relative;
+
+  &:disabled {
+    filter: opacity(30%);
+  }
 }
 
 .control__label {
@@ -39,6 +43,11 @@
   border-radius: 50%;
 }
 
+.control__input[type="radio"]:hover + .control__mark,
+.control__input[type="radio"]:focus + .control__mark {
+  box-shadow: inset 0 0 0 1px #bababa;
+}
+
 .control__input[type="radio"] {
   &:checked + .control__mark {
     background-image: url("../img/radiobutton-active.svg");
@@ -62,4 +71,9 @@
       background-image: url("../img/check-mark-big.svg");
     }
   }
+}
+
+.control__input[type="checkbox"]:hover + .control__mark,
+.control__input[type="checkbox"]:focus + .control__mark {
+  box-shadow: inset 0 0 0 1px #bababa;
 }

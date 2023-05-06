@@ -7,30 +7,30 @@
   @media (min-width: $tablet-width) {
     width: 168px;
   }
-
-  a:hover {
-    color: var(--c-basic-green);
-  }
-
-  a:active {
-    opacity: 0.3;
-  }
 }
 
 .copyright__text {
   font-size: 16px;
   line-height: 19px;
   color: var(--c-dark-gray);
+
+  .copyright__link:hover & {
+    color: var(--c-basic-green);
+  }
+
+  .copyright__link:active & {
+    opacity: 0.3;
+  }
 }
 
 .copyright__picture {
   fill: #666666;
 
-  .copyright a[href]:hover & {
+  .copyright__link:hover & {
     fill: var(--c-basic-green);
   }
 
-  .copyright a[href]:active & {
+  .copyright__link:active & {
     opacity: 0.3;
   }
 }
