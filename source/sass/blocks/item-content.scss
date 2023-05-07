@@ -72,6 +72,17 @@
       top: 20px;
       right: 20px;
     }
+
+    @media (min-width: $desktop-width) {
+      top: 20px;
+      right: 20px;
+    }
+  }
+
+  input {
+    @media (min-width: $tablet-width) {
+      width: 244px;
+    }
   }
 }
 

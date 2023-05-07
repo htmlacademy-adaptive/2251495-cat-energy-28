@@ -3,8 +3,9 @@
 
   @media (min-width: $tablet-width) {
     padding: 43px 30px 0;
-    background: linear-gradient(var(--c-white-default) 62%, var(--c-basic-gray) 62% 38%);
+    background: linear-gradient(var(--c-white-default) 57%, var(--c-basic-gray) 57% 43%);
     position: relative;
+    padding-bottom: 101px;
 
     &::before {
       position: absolute;
@@ -20,7 +21,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 43px 30px 0;
+    padding: 34px 30px 0;
     background: linear-gradient(var(--c-white-default) 27%, var(--c-basic-gray) 27% 73%);
 
     &::before {
@@ -31,7 +32,7 @@
 
 .example__wrapper {
   margin: 0 auto;
-  padding: 25px 20px 40px;
+  padding: 27px 20px 39px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -56,31 +57,31 @@
   gap: 20px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 91px;
+    margin-bottom: 103px;
     flex-direction: row;
     flex-wrap: wrap;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 91px;
+    margin-bottom: 75px;
     flex-direction: column;
   }
 }
 
 .example__title {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
   line-height: 40px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 63px;
+    margin-bottom: 43px;
     font-size: 60px;
     line-height: 60px;
     flex-grow: 1;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 146px;
+    margin-bottom: 125px;
   }
 }
 
@@ -95,7 +96,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 436px;
+    width: 433px;
     margin-bottom: 49px;
   }
 }
@@ -114,7 +115,7 @@
 }
 
 .example__number {
-  padding: 14px 15px 17px;
+  padding: 15px 15px 17px;
   font-family: var(--accent-font);
   font-size: 24px;
   line-height: 24px;
@@ -163,7 +164,7 @@
 
 .example__price {
   margin: 0;
-  margin-top: 11px;
+  margin-top: 14px;
   font-family: var(--accent-font);
   line-height: 20px;
   text-transform: uppercase;
@@ -173,6 +174,7 @@
 
   p {
     margin: 0;
+    margin-right: 4px;
   }
 
   @media (min-width: $tablet-width) {
@@ -185,12 +187,15 @@
 
     p {
       margin-bottom: 9px;
+      margin-right: 0;
     }
+
+    margin-top: 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 327px;
-    margin-top: 27px;
+    margin-top: 40px;
     margin-left: 0;
     flex-direction: row;
 

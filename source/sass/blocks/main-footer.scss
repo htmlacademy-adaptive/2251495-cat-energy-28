@@ -1,6 +1,14 @@
 .main-footer {
   padding: 40px 20px;
   background-color: var(--c-basic-gray);
+
+  @media (min-width: $tablet-width) {
+    padding: 54px 30px 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 62px 0 72px;
+  }
 }
 
 .main-footer__wrapper {
@@ -46,6 +54,7 @@
 
 .main-footer__logo {
   cursor: pointer;
+  color: #3e3e3e;
 
   &:hover .main-footer__logo-img {
     fill: #3e3e3e;

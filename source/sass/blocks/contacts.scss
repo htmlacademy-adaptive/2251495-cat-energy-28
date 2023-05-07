@@ -26,12 +26,13 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding: 56px 70px 62px 80px;
     width: 565px;
     position: absolute;
     background-color: var(--c-white-default);
     top: 95px;
     left: 110px;
-    gap: 87px;
+    gap: 95px;
     align-items: center;
   }
 }
@@ -49,6 +50,7 @@
     width: 172px;
     font-size: 20px;
     line-height: 26px;
+    transform: translateY(5px);
   }
 
   @media (min-width: $desktop-width) {
