@@ -55,7 +55,8 @@
 .main-footer__logo {
   cursor: pointer;
 
-  &:hover, &:focus .main-footer__logo-img {
+  &:hover,
+  &:focus .main-footer__logo-img {
     opacity: 0.3;
   }
 
