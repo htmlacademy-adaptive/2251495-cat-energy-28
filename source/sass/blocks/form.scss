@@ -110,6 +110,18 @@
     font-size: 20px;
     line-height: 30px;
   }
+
+  &:hover {
+    box-shadow: inset 0 0 0 1px var(--c-special-gray);
+  }
+
+  &:focus {
+    box-shadow: inset 0 0 0 2px var(--c-dark-gray);
+  }
+
+  &:disabled {
+    background-color: var(--c-light-gray);
+  }
 }
 
 .form__annotation {

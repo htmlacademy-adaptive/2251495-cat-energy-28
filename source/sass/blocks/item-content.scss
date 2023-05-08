@@ -50,8 +50,16 @@
   }
 }
 
-.item-content__input--error {
+.item-content__input:invalid:not(:placeholder-shown) {
   box-shadow: inset 0 0 0 1px var(--c-error-red);
+
+  .item-content--email::before {
+    background-color: var(var(--c-error-red));
+  }
+
+  .item-content--phone::before {
+    background-color: var(var(--c-error-red));
+  }
 }
 
 .item-content--email {
@@ -86,7 +94,7 @@
   }
 }
 
-.item-content--email:focus::before {
+.item-content--email:focus-within::before {
   background-color: var(--c-basic-green);
 }
 
@@ -112,6 +120,6 @@
   }
 }
 
-.item-content--phone:focus::before {
+.item-content--phone:focus-within::before {
   background-color: var(--c-basic-green);
 }

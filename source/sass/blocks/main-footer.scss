@@ -54,9 +54,19 @@
 
 .main-footer__logo {
   cursor: pointer;
-  color: #3e3e3e;
 
-  &:hover .main-footer__logo-img {
-    fill: #3e3e3e;
+  &:hover, &:focus .main-footer__logo-img {
+    opacity: 0.3;
+  }
+
+  &:active .main-footer__logo-img {
+    opacity: 0.6;
+  }
+}
+
+.main-footer__logo-img {
+  @media (min-width: $tablet-width) {
+    width: 143px;
+    height: 26px;
   }
 }
