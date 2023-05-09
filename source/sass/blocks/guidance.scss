@@ -111,6 +111,7 @@
   &::before {
     background-image: url("../img/sprite.svg#leaf");
     background-position: top 16px left 18px;
+    background-size: 25px 28px;
 
     @media (min-width: $tablet-width) {
       background-position: top 27px left 27px;
@@ -122,6 +123,7 @@
   &::before {
     background-image: url("../img/sprite.svg#water");
     background-position: top 16px left 18px;
+    background-size: 26px 29px;
 
     @media (min-width: $tablet-width) {
       background-position: top 26px left 27px;
@@ -133,6 +135,7 @@
   &::before {
     background-image: url("../img/sprite.svg#icon-eat");
     background-position: top 15px left 18px;
+    background-size: 25px 30px;
 
     @media (min-width: $tablet-width) {
       background-position: top 25px left 28px;
@@ -148,6 +151,7 @@
   &::before {
     background-image: url("../img/sprite.svg#time");
     background-position: top 15px left 18px;
+    background-size: 26px 31px;
 
     @media (min-width: $tablet-width) {
       background-position: top 25px left 27px;
