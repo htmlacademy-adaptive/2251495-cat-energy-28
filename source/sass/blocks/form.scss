@@ -177,6 +177,7 @@
   .form__title {
     margin: 26px 0 35px -20px;
     padding: 0 14px 0 20px;
+    font-weight: 400;
 
     @media (min-width: $tablet-width) {
       margin: 36px 0 76px -39px;
@@ -291,6 +292,7 @@
   .form__title {
     margin: 21px 0 40px -20px;
     padding: 0 23px 0 20px;
+    font-weight: 400;
 
     @media (min-width: $tablet-width) {
       margin: 67px 0 62px -40px;
