@@ -118,6 +118,8 @@
   border: none;
   display: block;
   position: relative;
+  width: 100%;
+  height: 362px;
   z-index: 2;
 
   @media (min-width: $tablet-width) {

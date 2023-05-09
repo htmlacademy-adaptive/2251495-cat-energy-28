@@ -151,6 +151,7 @@
 
     @media (min-width: $desktop-width) {
       flex-direction: row;
+      flex-wrap: wrap;
       gap: 78px;
     }
   }
@@ -210,10 +211,20 @@
     @media (min-width: $tablet-width) {
       padding: 0 66px 0 71px;
     }
+
+    @media (min-width: $desktop-width) {
+      padding: 0;
+    }
   }
 
   input {
     padding-left: 15px;
+    padding-right: 40px;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 20px;
+      padding-right: 50px;
+    }
   }
 }
 
