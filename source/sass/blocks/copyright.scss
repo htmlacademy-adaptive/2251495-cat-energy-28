@@ -10,7 +10,33 @@
 }
 
 .copyright__text {
+  display: block;
   font-size: 16px;
   line-height: 19px;
   color: var(--c-dark-gray);
+  transform: translateY(-4px);
+
+  .copyright__link:hover & {
+    color: var(--c-basic-green);
+  }
+
+  .copyright__link:active & {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    transform: translateY(0);
+  }
+}
+
+.copyright__picture {
+  fill: #666666;
+
+  .copyright__link:hover & {
+    fill: var(--c-basic-green);
+  }
+
+  .copyright__link:active & {
+    opacity: 0.3;
+  }
 }

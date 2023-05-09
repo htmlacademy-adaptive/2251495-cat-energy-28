@@ -3,10 +3,14 @@
   padding: 0;
   display: flex;
   list-style-type: none;
-}
 
-.social__item {
-  padding: 13px;
+  @media (min-width: $tablet-width) {
+    margin-left: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 22px;
+  }
 }
 
 .social__item--telegram {
@@ -17,4 +21,17 @@
 
 .social__link {
   display: flex;
+  padding: 13px;
+}
+
+.social__picture {
+  fill: #666666;
+
+  .social__link:hover & {
+    fill: var(--c-basic-green);
+  }
+
+  .social__link:active & {
+    opacity: 0.3;
+  }
 }

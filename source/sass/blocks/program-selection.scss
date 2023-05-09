@@ -1,5 +1,5 @@
 .program-selection {
-  padding: 20px 20px;
+  padding: 20px 20px 15px;
 
   @media (min-width: $tablet-width) {
     padding: 0 30px 45px;
@@ -23,6 +23,10 @@
   flex-direction: column;
   gap: 20px;
 
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+  }
+
   @media (min-width: $desktop-width) {
     flex-direction: row;
     gap: 80px;
@@ -31,12 +35,12 @@
 }
 
 .program-selection__item {
-  padding: 21px 20px 22px;
+  padding: 33px 20px 22px;
   background-color: var(--c-basic-gray);
   position: relative;
 
   @media (min-width: $tablet-width) {
-    padding: 77px 316px 57px 52px;
+    padding: 78px 316px 57px 52px;
     width: 100%;
   }
 
@@ -57,12 +61,13 @@
 }
 
 .program-selection__item--slim {
-  background-image: url("../img/cat-slim.svg");
-  background-position: 22px 21px;
+  background-image: url("../img/sprite.svg#cat-slim");
+  background-position: 23px 24px;
+  background-size: 50px 53px;
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
-    background-position: top 81px right 62px;
+    background-position: top 82px right 61px;
     background-size: 200px 211px;
   }
 
@@ -71,20 +76,22 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-position: 67px 41px;
+    background-position: 52px 41px;
     background-size: 100px 106px;
   }
 }
 
 .program-selection__item--strong {
-  background-image: url("../img/cat-strong.svg");
-  background-position: 13px 24px;
+  background-image: url("../img/sprite.svg#cat-strong");
+  background-position: 14px 21px;
   background-repeat: no-repeat;
   background-size: 67px 50px;
+  padding-top: 28px;
 
   @media (min-width: $tablet-width) {
     background-position: top 91px right 28px;
     background-size: 268px 200px;
+    padding-top: 77px;
   }
 
   @media (min-width: $tablet-width + 1px) {
@@ -122,20 +129,50 @@
 }
 
 .program-selection__link {
-  padding-right: 39px;
+  position: relative;
+  padding: 0;
   font-family: var(--accent-font);
   font-size: 16px;
   line-height: 16px;
   color: var(--c-black);
   text-transform: uppercase;
-  background-image: url("../img/arrow.svg");
-  background-position: 100% 50%;
-  background-repeat: no-repeat;
+
+  &::after {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    width: 24px;
+    height: 12px;
+    margin-left: 15px;
+    mask-image: url("../img/sprite.svg#arrow");
+    background-color: var(--c-black);
+    content: "";
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
     padding-right: 39px;
+
+    &::after {
+      margin-left: 25px;
+    }
+  }
+}
+
+.program-selection__link:hover {
+  &::after {
+    mask-image: url("../img/sprite.svg#arrow-big");
+    width: 32px;
+    transition: mask-image 0.1s;
+  }
+}
+
+.program-selection__link:active {
+  opacity: 0.3;
+
+  &::after {
+    opacity: 0.3;
   }
 }
 

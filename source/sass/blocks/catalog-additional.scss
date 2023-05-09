@@ -3,7 +3,7 @@
 
   &::before {
     position: absolute;
-    top: 42px;
+    top: 41px;
     left: 0;
     right: 0;
     width: 100vw;
@@ -12,11 +12,11 @@
     content: "";
 
     @media (min-width: $tablet-width) {
-      top: 57px;
+      top: 53px;
     }
 
     @media (min-width: $desktop-width) {
-      top: 63px;
+      top: 59px;
     }
   }
 }
@@ -25,17 +25,17 @@
   display: flex;
   flex-direction: column;
   gap: 35px;
-  padding: 25px 0 35px;
+  padding: 26px 0 15px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    padding: 34px 30px 68px;
+    padding: 32px 30px 76px;
     width: 768px;
     gap: 69px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 38px 110px 75px;
+    padding: 36px 110px 86px;
     width: 1440px;
     flex-direction: row;
     flex-wrap: wrap;
@@ -101,7 +101,7 @@
 }
 
 .catalog-additional__item {
-  padding: 13px 20px 19px;
+  padding: 13px 20px 20px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -174,7 +174,7 @@
 
 .catalog-additional__description-list {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   line-height: 14px;
   display: flex;
   justify-content: space-between;
@@ -183,6 +183,7 @@
     margin-bottom: 25px;
     font-size: 16px;
     line-height: 20px;
+    margin-right: 4px;
   }
 
   @media (min-width: $desktop-width) {
@@ -278,7 +279,7 @@
     width: 100%;
     height: 100%;
     background-color: rgba(104, 183, 56, 0.85);
-    background-image: url("../img/icon-gift.svg");
+    background-image: url("../img/sprite.svg#icon-gift");
     background-repeat: no-repeat;
     background-position: 101px 59px;
     background-size: 78px 80px;
@@ -295,7 +296,7 @@
 }
 
 .catalog-additional__bonus {
-  padding: 20px;
+  padding: 0 20px 20px;
   font-size: 16px;
   line-height: 20px;
   color: var(--c-white-default);
