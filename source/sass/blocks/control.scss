@@ -51,7 +51,7 @@
 
 .control__input[type="radio"] {
   &:checked + .control__mark {
-    background-image: url("../img/icons/sprite.svg#radiobutton-active");
+    background-image: url("../img/sprite.svg#radiobutton-active");
     background-repeat: no-repeat;
     background-size: 14px 14px;
     background-position: top 8px left 8px;
@@ -70,7 +70,7 @@
 
 .control__input[type="checkbox"] {
   &:checked + .control__mark {
-    background-image: url("../img/icons/sprite.svg#checkmark");
+    background-image: url("../img/sprite.svg#check-mark");
     background-repeat: no-repeat;
     background-size: 19px 15px;
     background-position: top 8px left 6px;

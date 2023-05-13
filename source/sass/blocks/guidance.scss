@@ -109,7 +109,7 @@
 
 .guidance__item--healthy {
   &::before {
-    background-image: url("../img/icons/sprite.svg#leaf");
+    background-image: url("../img/sprite.svg#leaf");
     background-position: top 16px left 18px;
     background-size: 25px 28px;
 
@@ -121,7 +121,7 @@
 
 .guidance__item--making {
   &::before {
-    background-image: url("../img/icons/sprite.svg#water");
+    background-image: url("../img/sprite.svg#water");
     background-position: top 16px left 18px;
     background-size: 26px 29px;
 
@@ -133,7 +133,7 @@
 
 .guidance__item--feeding {
   &::before {
-    background-image: url("../img/icons/sprite.svg#icon-eat");
+    background-image: url("../img/sprite.svg#icon-eat");
     background-position: top 15px left 18px;
     background-size: 25px 30px;
 
@@ -149,7 +149,7 @@
   }
 
   &::before {
-    background-image: url("../img/icons/sprite.svg#time");
+    background-image: url("../img/sprite.svg#time");
     background-position: top 15px left 18px;
     background-size: 26px 31px;
 
