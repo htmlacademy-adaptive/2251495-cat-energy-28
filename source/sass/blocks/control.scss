@@ -70,7 +70,7 @@
 
 .control__input[type="checkbox"] {
   &:checked + .control__mark {
-    background-image: url("../img/sprite.svg#checkmark");
+    background-image: url("../img/sprite.svg#check-mark");
     background-repeat: no-repeat;
     background-size: 19px 15px;
     background-position: top 8px left 6px;
