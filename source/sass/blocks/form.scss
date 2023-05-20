@@ -84,10 +84,12 @@
   color: var(--c-black);
   width: max-content;
   background-color: var(--c-white-default);
+  max-width: 250px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    max-width: 600px;
   }
 }
 
@@ -221,6 +223,7 @@
   input {
     padding-left: 15px;
     padding-right: 40px;
+    width: 100%;
 
     @media (min-width: $tablet-width) {
       padding-left: 20px;
