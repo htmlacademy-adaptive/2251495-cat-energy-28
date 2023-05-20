@@ -20,10 +20,6 @@
     }
   }
 
-  .form__fieldset--data {
-    width: 100%;
-  }
-
   @media (min-width: $tablet-width) {
     gap: 72px;
     padding: 0 67px 37px 71px;
@@ -40,7 +36,42 @@
   }
 }
 
+.form__fieldset--data {
+  width: 100%;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    bottom: -24px;
+    left: -20px;
+    width: calc(100% + 40px);
+    height: 1px;
+    background-color: #d9d9d9;
+    content: "";
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+}
+
 .form__fieldset--diet {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    bottom: -24px;
+    left: -20px;
+    width: calc(100% + 40px);
+    height: 1px;
+    background-color: #d9d9d9;
+    content: "";
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     padding: 30px 28px;
     box-shadow: inset 0 0 0 1px #e7e7e7;
@@ -137,6 +168,10 @@
     text-align: left;
     transform: translateY(-4px);
   }
+
+  @media (min-width: $desktop-width) {
+    transform: translateY(-2px);
+  }
 }
 
 .form__fieldset--contacts {
@@ -177,7 +212,7 @@
   }
 
   .form__title {
-    margin: 26px 0 35px -20px;
+    margin: 26px 0 34px -20px;
     padding: 0 14px 0 20px;
     font-weight: 400;
 
@@ -327,7 +362,7 @@
   }
 
   .form__item {
-    margin-bottom: 24px;
+    margin-bottom: 22px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 0;
@@ -336,7 +371,7 @@
 }
 
 .form__button {
-  margin-bottom: 21px;
+  margin-bottom: 22px;
   padding: 10px 10px;
   width: 280px;
   font-size: 16px;
@@ -356,7 +391,7 @@
 
 .form__button-wrapper {
   margin: 0 auto;
-  padding: 6px 20px 32px;
+  padding: 14px 20px 32px;
   max-width: 1220px;
 
   @media (min-width: $tablet-width) {
@@ -367,7 +402,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    gap: 84px;
+    gap: 85px;
     padding: 66px 0 82px;
   }
 }
