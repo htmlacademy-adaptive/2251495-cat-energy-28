@@ -26,8 +26,7 @@
     justify-content: space-between;
   }
 
-  &::before,
-  &::after {
+  &::before {
     position: absolute;
     left: 0;
     right: 0;
@@ -42,15 +41,8 @@
       display: none;
     }
   }
-
-  &::after {
-    top: 106px;
-
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
-  }
 }
+
 
 .main-footer__logo {
   cursor: pointer;

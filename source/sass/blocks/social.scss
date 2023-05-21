@@ -3,6 +3,7 @@
   padding: 0;
   display: flex;
   list-style-type: none;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
     margin-left: 24px;
@@ -10,6 +11,7 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 22px;
+    max-width: 600px;
   }
 }
 
