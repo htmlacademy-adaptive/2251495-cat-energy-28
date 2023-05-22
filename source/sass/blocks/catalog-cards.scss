@@ -167,7 +167,8 @@
   background-color: var(--c-basic-gray);
   color: var(--c-dark-gray);
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: #ebebeb;
   }
 
