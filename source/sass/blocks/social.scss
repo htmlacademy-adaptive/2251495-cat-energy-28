@@ -28,12 +28,17 @@
 
 .social__picture {
   fill: #666666;
+}
 
-  .social__link:hover & {
-    fill: var(--c-basic-green);
-  }
+.social__link:hover .social__picture,
+.social__link:focus .social__picture {
+  fill: var(--c-basic-green);
+}
 
-  .social__link:active & {
-    opacity: 0.3;
-  }
+.social__link:focus .social__picture {
+  outline: none;
+}
+
+.social__link:active .social__picture {
+  opacity: 0.3;
 }

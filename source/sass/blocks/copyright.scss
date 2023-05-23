@@ -38,22 +38,19 @@
   }
 }
 
-.copyright__link:hover .copyright__text {
-  color: var(--c-basic-green);
-}
-
 .copyright__link:active .copyright__text {
   opacity: 0.3;
 }
 
 .copyright__picture {
   fill: #666666;
+}
 
-  .copyright__link:hover & {
-    fill: var(--c-basic-green);
-  }
+.copyright__link:hover .copyright__picture,
+.copyright__link:focus .copyright__picture {
+  fill: var(--c-basic-green);
+}
 
-  .copyright__link:active & {
-    opacity: 0.3;
-  }
+.copyright__link:active .copyright__picture {
+  opacity: 0.3;
 }
