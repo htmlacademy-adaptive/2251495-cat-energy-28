@@ -13,6 +13,7 @@
 .contacts__wrapper {
   position: relative;
   margin: 0 auto;
+  max-width: 1220px;
 }
 
 .contacts__container {
@@ -31,7 +32,6 @@
     position: absolute;
     background-color: var(--c-white-default);
     top: 95px;
-    left: 110px;
     gap: 95px;
     align-items: center;
   }
@@ -43,7 +43,7 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: var(--c-black);
+  color: #111111;
   width: 139px;
 
   @media (min-width: $tablet-width) {
@@ -90,6 +90,7 @@
 
 .contacts__map {
   height: 362px;
+  position: relative;
 
   img {
     width: 100%;
@@ -97,16 +98,8 @@
     object-fit: cover;
     object-position: center;
     position: absolute;
-    top: 112px;
+    top: 0;
     z-index: 1;
-
-    @media (min-width: $tablet-width) {
-      top: 198px;
-    }
-
-    @media (min-width: $desktop-width) {
-      top: 0;
-    }
   }
 
   @media (min-width: $tablet-width) {
